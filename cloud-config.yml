@@ -1,0 +1,16 @@
+rancher:
+  docker:
+    tls: true
+  environment:
+    EXTRA_CMDLINE: /init
+  network:
+    dns:
+      nameservers:
+      - 8.8.8.8
+      - 8.8.4.4
+  state:
+    dev: LABEL=RANCHER_STATE
+    wait: true
+ssh_authorized_keys:
+- ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAxpdf44aRoWxKpVIkRT049lCLrsSZ3n2oZdw1YEIGv1ODuqeyLr+fMZYQdffik/7Tz5RO9ePXlDxYmLqg4w6CfOPfR5kxKPkmk/WCh1u7p3Qn6y7TTar9bFcmNEzgmXpNq8yOXrECrnyyHMT4NFOsdAL6fypkxkj8AkJ3lBANAuE= crispi@deepthought
+
